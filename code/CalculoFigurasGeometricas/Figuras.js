@@ -28,3 +28,7 @@ console.log("El perimetro del triangulo mide "+perimetroTriangulo+" cm y el area
 
 console.groupEnd();
 
+//codigo del circulo
+console.group("Circulos");
+
+console.groupEnd();
