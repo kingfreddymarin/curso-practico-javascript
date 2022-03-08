@@ -48,5 +48,4 @@ console.log("El perimetro del circulo es: " + perimetroCirculo + " cm");
 const areaCirculo = (radioCirculo*radioCirculo)*PI;
 console.log("El area del circulo es: " + areaCirculo + " cm");
 
-
 console.groupEnd();
