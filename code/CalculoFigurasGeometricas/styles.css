@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 19, 12);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    gap: 2rem;
+}
+header p{
+    opacity: 75%;
+}
+header{
+    margin-right: 6rem;
+    border-bottom: 0.1rem solid;
+    border-color: white;
+}
+.figures{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.circle,
+.square,
+.triangle{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: orangered;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgb(32, 19, 12);
+}
+.circle label,
+.square label,
+.triangle label{
+    opacity: 75%;
+}
+.circle input,
+.square input,
+.triangle input{
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+}
+.circle input,
+.square input,
+.triangle input{
+    color: white;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    border-color: orangered;
+    background-color: rgb(32, 19, 12);
+}
+.circle button,
+.square button,
+.triangle button{
+    color: white;
+    border-style: solid;
+    border-color: orangered;
+    padding: 0.4em 1rem;
+    border-radius: 0.4rem;
+    background-color: rgb(32, 19, 12);
+}
