@@ -17,7 +17,8 @@ header{
 }
 .figures{
     display: flex;
-    gap: 0.5rem;
+    flex-direction: row;
+    gap: 1rem;
     align-items: center;
 }
 .circle,
@@ -60,4 +61,10 @@ header{
     padding: 0.4em 1rem;
     border-radius: 0.5rem;
     background-color: rgb(32, 19, 12);
+}
+@media(max-width:700px){
+    .figures{
+        display: flex;
+        flex-direction: column;
+    }
 }
