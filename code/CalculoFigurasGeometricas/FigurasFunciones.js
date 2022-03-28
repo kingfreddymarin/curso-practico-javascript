@@ -27,8 +27,9 @@ function perimetroCirculo (radio){
 function areaCirculo (radio){
     return (radio * radio) * PI;
 }
-//Interaccion con HTML  
-//Square functions
+
+//functions
+//Square functions HTML integration
 function calculatePerimeterSquare(){
     const input = document.getElementById("inputSquare");
     const value = input.value;
@@ -43,7 +44,7 @@ function calculateAreaSquare(){
     const area = areaCuadrado(value);
     alert(area);
 }
-//triangle functions
+//triangle functions HTML integration
 function calculatePerimeterTriangle(){
     const left = document.getElementById("left");
     const right = document.getElementById("right");
@@ -82,4 +83,19 @@ function calculateAreaTriangle(){
         const area = areaTriangulo(c, height);
         alert(area);
     }
+}
+//circle functions HTML integration
+function calculatePerimeterCircle(){
+    const inputRadius = document.getElementById("radius");
+    const radius = Number.parseFloat(inputRadius.value);
+    
+    const perimeter = perimetroCirculo(radius);
+    alert(perimeter);
+}
+function calculateAreaCircle(){
+    const inputRadius = document.getElementById("radius");
+    const radius = Number.parseFloat(inputRadius.value);
+    
+    const area = areaCirculo(radius);
+    alert(area);
 }

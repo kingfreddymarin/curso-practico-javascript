@@ -5,57 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometric Figures | Workshop</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
-<style>
-    body{
-        display: flex;
-        flex-direction: row;
-    }
-    header{
-        margin-right: 30px;
-    }
-</style>
 <body>
     <header>
         <h1>
             Calculating Geometric Figures | Workshop
         </h1>
-        <p>This is my first workshop developed with JavaScript, learned @ platzi</p>
+        <p>This is my first workshop developed with JavaScript. Learned @ platzi</p>
     </header>
-    <section>
-        <div>
+    <section class="figures">
+        <div class="square">
+            
             <h2>Calculate the perimeter and the area of a square</h2>
             <form>
                 <label for="inputSquare">
                     Insert the longitude of one side of the square
                 </label>
-                <input id="inputSquare" type="number" />
-                <p></p>
-                <button type="button" onclick="calculatePerimeterSquare()">
-                    Calculate Perimeter
-                </button>
-                <button type="button" onclick="calculateAreaSquare()">
-                    Calculate Area
-                </button>
+                   <p></p>
+                   <input id="inputSquare" type="number" placeholder = "Any side..."/>
+                   <p></p>
+                   <button type="button" onclick="calculatePerimeterSquare()">
+                       Calculate Perimeter
+                   </button>
+                   <button type="button" onclick="calculateAreaSquare()">
+                       Calculate Area
+                   </button>
             </form>
+            
         </div>
-        <div>
+        <div class="triangle">
             <h2>Calculate the perimeter and the area of a triangle</h2>
             <form>
-                <label for="leftSide, rightSide, base">
-                    Insert the longitude of the left, right and base side of the triangle:
+                <label for="left, right, base">
+                    Insert the longitude of the left, right and base side of the triangle
                 </label>
-                <input id="left" type="number" />
                 <p></p>
-                <input id="right" type="number" />
+                <input id="left" type="number" placeholder="Left side..."/>
                 <p></p>
-                <input id = "base" type="number" />
+                <input id="right" type="number" placeholder="Right side..."/>
+                <p></p>
+                <input id = "base" type="number" placeholder="Base side..."/>
                 <p></p>
                 <button type="button" onclick="calculatePerimeterTriangle()">
                     Calculate Perimeter
                 </button>
                 <button type="button" onclick="calculateAreaTriangle()">
                     Calculate Area
+                </button>
+            </form>
+        </div>
+        <div class="circle">
+            <h2>Calculate the perimeter and the area of a circle</h2>
+            <form> 
+                <label for="radius">
+                    Insert the longitude of the radius of the circle
+                </label>
+                <p></p>
+                <input id="radius" type="number" placeholder="Radius..."/>
+                <p></p>
+                <button type="button" onclick="calculatePerimeterCircle()">
+                    Calculate perimeter
+                </button>
+                <button type="button" onclick="calculateAreaCircle()">
+                    Calculate area
                 </button>
             </form>
         </div>
