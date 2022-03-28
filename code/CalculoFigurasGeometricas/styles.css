@@ -2,10 +2,10 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: rgb(32, 19, 12);
+    background-color: rgb(15, 15, 15);
     color: white;
     font-family: 'Montserrat', sans-serif;
-    gap: 2rem;
+    gap: 3rem;
 }
 header p{
     opacity: 75%;
@@ -14,6 +14,9 @@ header{
     margin-right: 6rem;
     border-bottom: 0.1rem solid;
     border-color: white;
+}
+section{
+    margin: 2rem;
 }
 .figures{
     display: flex;
@@ -27,10 +30,10 @@ header{
     display: flex;
     flex-direction: column;
     border-style: solid;
-    border-color: orangered;
+    border-color: white;
     border-radius: 1rem;
     padding: 1rem;
-    background-color: rgb(32, 19, 12);
+    background-color: rgb(15, 15, 15);
 }
 .circle label,
 .square label,
@@ -49,20 +52,20 @@ header{
     color: white;
     padding: 0.4rem;
     border-radius: 0.5rem;
-    border-color: orangered;
-    background-color: rgb(32, 19, 12);
+    border-color: white;
+    background-color: rgb(15, 15, 15);
 }
 .circle button,
 .square button,
 .triangle button{
     color: white;
     border-style: solid;
-    border-color: orangered;
+    border-color: white;
     padding: 0.4em 1rem;
     border-radius: 0.5rem;
-    background-color: rgb(32, 19, 12);
+    background-color: rgb(15, 15, 15);
 }
-@media(max-width:700px){
+@media(max-width:775px){
     .figures{
         display: flex;
         flex-direction: column;
