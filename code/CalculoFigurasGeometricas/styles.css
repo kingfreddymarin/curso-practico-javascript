@@ -58,6 +58,6 @@ header{
     border-style: solid;
     border-color: orangered;
     padding: 0.4em 1rem;
-    border-radius: 0.4rem;
+    border-radius: 0.5rem;
     background-color: rgb(32, 19, 12);
 }
