@@ -4,12 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figuras Geometricas | Taller 1</title>
+    <title>Geometric Figures | Workshop</title>
 </head>
+<style>
+    body{
+        display: flex;
+        flex-direction: row;
+    }
+    header{
+        margin-right: 30px;
+    }
+</style>
 <body>
-    <h1>
-        Figuras Geometricas
-    </h1>
+    <header>
+        <h1>
+            Calculating Geometric Figures | Workshop
+        </h1>
+        <p>This is my first workshop developed with JavaScript, learned @ platzi</p>
+    </header>
+    <section>
+        <div>
+            <h2>Calculate the perimeter and the area of a square</h2>
+            <form>
+                <label for="inputSquare">
+                    Insert the longitude of one side of the square
+                </label>
+                <input id="inputSquare" type="number" />
+                <p></p>
+                <button type="button" onclick="calculatePerimeterSquare()">
+                    Calculate Perimeter
+                </button>
+                <button type="button" onclick="calculateAreaSquare()">
+                    Calculate Area
+                </button>
+            </form>
+        </div>
+        <div>
+            <h2>Calculate the perimeter and the area of a triangle</h2>
+            <form>
+                <label for="leftSide, rightSide, base">
+                    Insert the longitude of the left, right and base side of the triangle:
+                </label>
+                <input id="left" type="number" />
+                <p></p>
+                <input id="right" type="number" />
+                <p></p>
+                <input id = "base" type="number" />
+                <p></p>
+                <button type="button" onclick="calculatePerimeterTriangle()">
+                    Calculate Perimeter
+                </button>
+                <button type="button" onclick="calculateAreaTriangle()">
+                    Calculate Area
+                </button>
+            </form>
+        </div>
+    </section>
 
     <script src="FigurasFunciones.js"></script>
     
