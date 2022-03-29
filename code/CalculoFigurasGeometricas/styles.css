@@ -9,11 +9,15 @@ body{
 }
 header p{
     opacity: 75%;
+    margin-left: 1rem;
 }
 header{
     margin-right: 6rem;
     border-bottom: 0.1rem solid;
     border-color: white;
+}
+header h1{
+    margin-left: 1rem
 }
 section{
     margin: 2rem;
@@ -58,16 +62,20 @@ section{
 .circle button,
 .square button,
 .triangle button{
-    color: white;
+    color: rgb(15, 15, 15);
     border-style: solid;
-    border-color: white;
+    border-color: rgb(15, 15, 15);
     padding: 0.4em 1rem;
     border-radius: 0.5rem;
-    background-color: rgb(15, 15, 15);
+    background-color: white;
 }
 @media(max-width:775px){
     .figures{
         display: flex;
         flex-direction: column;
+    }
+    header{
+        display: flex;
+        align-items: center;
     }
 }
