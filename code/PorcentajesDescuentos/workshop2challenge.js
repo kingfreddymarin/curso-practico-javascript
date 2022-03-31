@@ -1,13 +1,13 @@
 const coupons = ["AXISXD01", "AXISXD02", "AXISXD03"];
-/*
-let txt = " ";
-coupons.forEach(countCoupons);
-document.getElementById("coupons").innerHTML = txt;
-
-function countCoupons(value, index, array) {
-    txt = value + "<br>";
+/*for (i = 0; i <coupons.length;i++) {
+    document.getElementById("coupons").innerText = coupons[i]
 }*/
-
+let txt = "";
+coupons.forEach(countfunction)
+document.getElementById("coupons").innerHTML = txt;
+function countfunction(value, index, array){
+    txt += value + "<br>";
+}
 function calculateDiscount(price, discount){
     const finalPricePercentage = 100 - discount;
     const total = ((price*finalPricePercentage)/100);
