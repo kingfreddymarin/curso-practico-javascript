@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15, 15, 15);
+    color: azure;
+    font-family: 'Montserrat', sans-serif;
+    gap: 2rem;
+    padding: 1rem;
+}
+header *{
+    margin: 0;
+}
+header p{
+    opacity: 80%;
+}
+form *{
+    margin: 0.5rem;
+    padding: 0rem;
+}
+.discounting-block{
+    border-style: solid;
+    border-color: azure;
+    border-radius: 0.8rem;
+    padding: 1rem;
+}

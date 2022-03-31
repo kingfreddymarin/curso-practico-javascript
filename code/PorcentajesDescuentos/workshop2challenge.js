@@ -1,10 +1,8 @@
 const coupons = ["AXISXD01", "AXISXD02", "AXISXD03"];
-/*for (i = 0; i <coupons.length;i++) {
-    document.getElementById("coupons").innerText = coupons[i]
-}*/
 let txt = "";
 coupons.forEach(countfunction)
 document.getElementById("coupons").innerHTML = txt;
+
 function countfunction(value, index, array){
     txt += value + "<br>";
 }
@@ -20,7 +18,7 @@ function onClickCalculateDiscount(){
     //traemos los cupones declarados en el scope global
     const inputCoupon = document.getElementById("inputCoupon");
     const coupon = inputCoupon.value;
-
+    
     if(coupon == coupons[0]){
         const discount = 50;
         const total = calculateDiscount(price, discount);

@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./workshop2challenge.js" defer ></script>
+    <link rel="stylesheet" href="./workshop2challenge.css">
 </head>
 <body>
     <header>
-        <h1>Prices & discounts | workshop</h1>
+        <h1>Prices & discounts | Workshop</h1>
+        <p>This is my second workshop developed with JavaScript. Learned @ platzi</p>
     </header>
-    <section>
-        <label for="inputPrice">Insert the value or price and the percentage of discount of the object you want to buy</label>
-        <p></p>
-        <p id="coupons"></p>
-        <input id="inputPrice" type="number" placeholder="insert price...">
-        <input id="inputCoupon" type="text" placeholder="insert coupon...">
-        <button type="button" onclick="onClickCalculateDiscount(inputPrice, inputCoupon)">Calculate!</button>
-        <h4 id="displayResult"></h4>
+    <section class="main">
+        <div class="discounting-block">
+            <form>
+                <label for="inputPrice, inputCoupon">Insert the value or price and the percentage of discount of the object you want to buy</label>
+                <p></p>
+                <p id="coupons"></p>
+                <input id="inputPrice" type="number" placeholder="insert price...">
+                <input id="inputCoupon" type="text" placeholder="insert coupon...">
+                <button type="button" onclick="onClickCalculateDiscount(inputPrice, inputCoupon)">Calculate!</button>
+                <h4 id="displayResult"></h4>
+            </form>
+        </div>
     </section>
 </body>
 </html>
