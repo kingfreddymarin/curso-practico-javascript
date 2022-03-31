@@ -1,10 +1,18 @@
-const precio = 1786.99;
-const descuento = 85.00;
-const total = ((descuento*precio)/100);
 
-function calculateDiscount(precio, descuento){
-    const total = ((precio*(100-descuento))/100)
+function calculateDiscount(price, discount){
+    const finalPricePercentage = 100 - discount;
+    const total = ((price*finalPricePercentage)/100);
     return total;
 }
+function onClickCalculateDiscount(){
+    const inputPrice = document.getElementById("inputPrice");
+    const price = Number.parseFloat(inputPrice.value);
+    
+    const inputDiscount = document.getElementById("inputDiscount");
+    const discount = Number.parseFloat(inputDiscount.value);
+    
+    const total = calculateDiscount(price, discount);
 
-console.log(total);
+    const displayResult = document.getElementById("displayResult");
+    displayResult.innerText = "Precio con descuento: " + total;
+}

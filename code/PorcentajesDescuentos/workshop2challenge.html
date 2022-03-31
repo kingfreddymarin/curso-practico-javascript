@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prices & Discounts workshop</title>
-    <script src="./workshop2.js"></script>
+    <title>Document</title>
+    <script src="./workshop2challenge.js"></script>
 </head>
 <body>
     <header>
@@ -15,8 +15,9 @@
         <label for="inputPrice">Insert the value or price and the percentage of discount of the object you want to buy</label>
         <p></p>
         <input id="inputPrice" type="number" placeholder="insert price...">
-        <input id="inputDiscount" type="number" placeholder="insert discount...">
-        <button type="button" onclick="onClickCalculateDiscount(inputPrice, inputDiscount)">Calculate!</button>
+        <p id="coupons"></p>
+        <input id="inputCoupon" type="text" placeholder="insert coupon...">
+        <button type="button" onclick="onClickCalculateDiscount(inputPrice, inputCoupon)">Calculate!</button>
         <h4 id="displayResult"></h4>
     </section>
 </body>
