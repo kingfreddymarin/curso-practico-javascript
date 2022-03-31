@@ -15,12 +15,21 @@ header p{
     opacity: 80%;
 }
 form *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0.5rem;
     padding: 0rem;
+    
+}
+input#inputCoupon,
+input#inpuPrice{
+    margin-right: 0px;
 }
 .discounting-block{
     border-style: solid;
     border-color: azure;
     border-radius: 0.8rem;
     padding: 1rem;
+    width: 30rem;
 }
