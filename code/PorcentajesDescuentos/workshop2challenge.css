@@ -1,34 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 body{
     display: flex;
+    align-items: center;
     flex-direction: column;
-    background-color: rgb(15, 15, 15);
-    color: azure;
+    background-color: azure;
+    color: rgb(15, 15, 15);
     font-family: 'Montserrat', sans-serif;
     gap: 2rem;
     padding: 1rem;
 }
 header *{
-    margin: 0;
+    margin: 1rem;
+}
+header h1{
+    margin-left: 4rem;
 }
 header p{
     opacity: 80%;
 }
 form *{
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 0.5rem;
+    margin: 0rem;
     padding: 0rem;
     
 }
-input#inputCoupon,
-input#inpuPrice{
-    margin-right: 0px;
+form #inputPrice{
+    margin-bottom: 1rem;
+}
+form button {
+    margin-left: 13rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: azure;
+    background-color: rgb(15, 15, 15);
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+.input{
+    margin-left: 11.4rem;
+    align-items: center;
+    width: 7rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+#coupons{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .discounting-block{
     border-style: solid;
-    border-color: azure;
+    border-color: rgb(15, 15, 15);
     border-radius: 0.8rem;
     padding: 1rem;
     width: 30rem;
